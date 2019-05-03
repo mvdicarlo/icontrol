@@ -2,9 +2,10 @@
   "name": "icontrol",
   "version": "1.0.0",
   "description": "Tiny and simple undle for watching changes on form fields",
+  "homepage": "https://github.com/mvdicarlo/icontrol",
   "main": "icontrol.js",
   "scripts": {
-    "build": "rimraf dist && mkdir dist && uglifyjs --compress --mangle --output dist/icontrol.min.js -- src/icontrol.js"
+    "build": "rimraf dist && mkdir dist && uglifyjs --compress --mangle --output dist/icontrol.min.js -- src/icontrol.js && cp src/icontrol.js dist"
   },
   "keywords": [
     "html",
@@ -12,6 +13,14 @@
     "input",
     "validate",
     "browser"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mvdicarlo/icontrol.git"
+  },
+  "files": [
+    "src",
+    "dist"
   ],
   "author": "Michael DiCarlo",
   "license": "MIT",
