@@ -2,17 +2,22 @@
 
 Tiny and simple way to watch changes on form fields
 
+### Installation
+
+`npm i -S icontroljs`  
+`<script src="some_dir/node_modules/icontroljs/dist/icontrol.min.js"></script>`  
+
 ### Documentation
 
 IControl(Element, [Options])  
-__options__ {  
-&nbsp;&nbsp;&nbsp;&nbsp;change: _function_ `change(event, valid, value) { }`  
-&nbsp;&nbsp;&nbsp;&nbsp;blur: _function_ `blur(event, valid, value) { }`  
-&nbsp;&nbsp;&nbsp;&nbsp;submit: _function_ `submit(event, valid, value /* FormData */) { }`  
-&nbsp;&nbsp;&nbsp;&nbsp;validate: _function_ `validate(value) { return true }`  
+**options** {  
+    change: _function_ `change(event, valid, value) { }`  
+    blur: _function_ `blur(event, valid, value) { }`  
+    submit: _function_ `submit(event, valid, value /* FormData */) { }`  
+    validate: _function_ `validate(value) { return true }`  
 }  
 
-__returns__ *Element*
+**returns** _Element_
 
 **All callbacks have a '_this_' of the element passed into IControl**
 **When providing a Form element, the value will always be a [FormData](https://developer.mozilla.org/en-US/docs/Web/API/FormData) object**
