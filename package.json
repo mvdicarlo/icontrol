@@ -1,0 +1,22 @@
+{
+  "name": "icontrol",
+  "version": "1.0.0",
+  "description": "Tiny and simple undle for watching changes on form fields",
+  "main": "icontrol.js",
+  "scripts": {
+    "build": "rimraf dist && mkdir dist && uglifyjs --compress --mangle --output dist/icontrol.min.js -- src/icontrol.js"
+  },
+  "keywords": [
+    "html",
+    "form",
+    "input",
+    "validate",
+    "browser"
+  ],
+  "author": "Michael DiCarlo",
+  "license": "MIT",
+  "devDependencies": {
+    "rimraf": "^2.6.3",
+    "uglify-js": "^3.5.10"
+  }
+}
